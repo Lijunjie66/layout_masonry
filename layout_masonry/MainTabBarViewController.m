@@ -1,4 +1,6 @@
 //
+//  详解来源：
+//  https://www.jianshu.com/p/2f74a5d93faa
 //  MainTabBarViewController.m
 //  layout_masonry
 //
@@ -54,7 +56,18 @@
     [item setTitleTextAttributes:dic forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
     
+    // 在这里调用下面的 封装方法：
+    // 添加子控制器
+    [self setupChildVC:@"首页" andImage:@"icon_topic" andSelectImage:@"icon_topic_selected"];
+    [self setupChildVC:@"云随访" andImage:@"icon_topic" andSelectImage:@"icon_topic_selected"];
+    [self setupChildVC:@"医生圈" andImage:@"icon_topic" andSelectImage:@"icon_topic_selected"];
+    [self setupChildVC:@"我的" andImage:@"icon_topic" andSelectImage:@"icon_topic_selected"];
+    [self setupChildVC:@"中心" andImage:@"icon_topic" andSelectImage:@"icon_topic_selected"];
     
+    
+    
+    
+/*
     // 添加子控件
     UIViewController *mainViewController1 = [[UIViewController alloc] init];
     mainViewController1.tabBarItem.title = @"首页";  // 设置标题
@@ -66,7 +79,7 @@
     mainViewController1.view.backgroundColor = [UIColor grayColor]; //
     [self addChildViewController:mainViewController1];
     
-    
+
     
     UIViewController *mainViewController2 = [[UIViewController alloc] init];
     mainViewController2.tabBarItem.title = @"云随访";
@@ -96,18 +109,24 @@
     mainViewController5.view.backgroundColor = [UIColor yellowColor];
     [self addChildViewController:mainViewController5];
     
-    
+*/
     
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+ *
+ * （ 封装 ）初始化子控制器
+ *
+ */
+- (void)setupChildVC:(NSString *)title andImage:(NSString *)image andSelectImage:(NSString *)selectImage {
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.tabBarItem.title = title;
+    vc.tabBarItem.image = [UIImage imageNamed:image];  // 未选中图标
+    vc.tabBarItem.selectedImage = [UIImage imageNamed:selectImage]; //选中时图标
+    vc.view.backgroundColor = [UIColor grayColor]; // 颜色统一了
+    [self addChildViewController:vc];
+    
+    
 }
-*/
 
 @end
