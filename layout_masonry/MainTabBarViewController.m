@@ -9,6 +9,7 @@
 //
 
 #import "MainTabBarViewController.h"
+#import "MainTabBar.h"
 
 @interface MainTabBarViewController ()
 
@@ -60,10 +61,10 @@
     // 添加子控制器
     [self setupChildVC:@"首页" andImage:@"icon_topic" andSelectImage:@"icon_topic_selected"];
     [self setupChildVC:@"云随访" andImage:@"icon_topic" andSelectImage:@"icon_topic_selected"];
+    [self setupChildVC:@"发布" andImage:@"tabBar_publish_icon" andSelectImage:@"tabBar_publish_click_icon"];   // 自定义的 tabBar（在MainTabBar.m中）
     [self setupChildVC:@"医生圈" andImage:@"icon_topic" andSelectImage:@"icon_topic_selected"];
     [self setupChildVC:@"我的" andImage:@"icon_topic" andSelectImage:@"icon_topic_selected"];
-    [self setupChildVC:@"中心" andImage:@"icon_topic" andSelectImage:@"icon_topic_selected"];
-    
+    //[self setupChildVC:@"中心" andImage:@"icon_topic" andSelectImage:@"icon_topic_selected"];
     
     
     
@@ -123,10 +124,8 @@
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];  // 未选中图标
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectImage]; //选中时图标
-    vc.view.backgroundColor = [UIColor grayColor]; // 颜色统一了
-    [self addChildViewController:vc];
-    
-    
+    vc.view.backgroundColor = [UIColor yellowColor]; // 颜色统一了
+    [self addChildViewController:vc];  // 每个标签展示的内容都是不同的一个View（数据内容、结构不同），这样切换既不会影响之前View还可以快速切回之前的View，就用方法：addChildViewController
 }
 
 @end

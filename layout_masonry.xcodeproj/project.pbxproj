@@ -16,6 +16,7 @@
 		9C624D9121819A4100F6A6BA /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C624D9021819A4100F6A6BA /* MainTabBarViewController.m */; };
 		9C624D962181A41400F6A6BA /* tabBar_essence_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C624D942181A41400F6A6BA /* tabBar_essence_icon.png */; };
 		9C624D972181A41400F6A6BA /* tabBar_essence_click_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C624D952181A41400F6A6BA /* tabBar_essence_click_icon.png */; };
+		9C624D9A2181C63700F6A6BA /* MainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C624D992181C63700F6A6BA /* MainTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		9C624D9021819A4100F6A6BA /* MainTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
 		9C624D942181A41400F6A6BA /* tabBar_essence_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar_essence_icon.png; sourceTree = "<group>"; };
 		9C624D952181A41400F6A6BA /* tabBar_essence_click_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar_essence_click_icon.png; sourceTree = "<group>"; };
+		9C624D982181C63700F6A6BA /* MainTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBar.h; sourceTree = "<group>"; };
+		9C624D992181C63700F6A6BA /* MainTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				9C624D7A218197A400F6A6BA /* AppDelegate.m */,
 				9C624D8F21819A4100F6A6BA /* MainTabBarViewController.h */,
 				9C624D9021819A4100F6A6BA /* MainTabBarViewController.m */,
+				9C624D982181C63700F6A6BA /* MainTabBar.h */,
+				9C624D992181C63700F6A6BA /* MainTabBar.m */,
 				9C624D7C218197A400F6A6BA /* ViewController.h */,
 				9C624D7D218197A400F6A6BA /* ViewController.m */,
 				9C624D932181A41400F6A6BA /* Resources */,
@@ -165,6 +170,7 @@
 				9C624D7E218197A400F6A6BA /* ViewController.m in Sources */,
 				9C624D9121819A4100F6A6BA /* MainTabBarViewController.m in Sources */,
 				9C624D89218197A600F6A6BA /* main.m in Sources */,
+				9C624D9A2181C63700F6A6BA /* MainTabBar.m in Sources */,
 				9C624D7B218197A400F6A6BA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

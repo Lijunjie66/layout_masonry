@@ -28,6 +28,10 @@
     MainTabBarViewController *mainVC = [[MainTabBarViewController alloc] init];
     //self.window.rootViewController = mainVC;
     
+    /*
+     *  tabBarItem  是tabBar上：图片在上，文字在下的格式
+     */
+    
     
 /*
      【   作者：STzen
